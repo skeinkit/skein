@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Skein
 
 class ViewController: UIViewController {
 
@@ -17,6 +18,12 @@ class ViewController: UIViewController {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+
+        let tes = ReplaceMe()
+
+        let mc = MyClassTest()
+        let str = ""
+        print(str.decimalDigits)
         // Dispose of any resources that can be recreated.
     }
 

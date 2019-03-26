@@ -29,8 +29,17 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'Skein/Classes/**/*'
-  
+  s.default_subspec = "Foundation"
+
+  s.subspec 'Foundation' do |ss|
+    ss.source_files        = 'Source/Foundation'
+    ss.framework  = "Foundation"
+  end
+
+  s.subspec 'Extensions' do |ss|
+    ss.source_files        = 'Source/Extensions'
+  end
+
   # s.resource_bundles = {
   #   'Skein' => ['Skein/Assets/*.png']
   # }
