@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'Skein'
-  s.version          = '0.1.0'
+  s.version          = '0.2.0'
   s.summary          = '🚀👩‍💻'
 
   s.description      = 'Skein is a set of Swift extensions, utilities and components that aimed to speed up application development.'
