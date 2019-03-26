@@ -1,21 +1,7 @@
-#
-# Be sure to run `pod lib lint Skein.podspec' to ensure this is a
-# valid spec before submitting.
-#
-# Any lines starting with a # are optional, but their use is encouraged
-# To learn more about a Podspec see https://guides.cocoapods.org/syntax/podspec.html
-#
-
 Pod::Spec.new do |s|
   s.name             = 'Skein'
   s.version          = '0.1.0'
-  s.summary          = '👩‍💻🚀'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
+  s.summary          = '🚀👩‍💻'
 
   s.description      = 'Skein is a set of Swift extensions, utilities and components that aimed to speed up application development.'
 
@@ -29,22 +15,18 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '8.0'
 
-  s.default_subspec = "Foundation"
-
-  s.subspec 'Foundation' do |ss|
-    ss.source_files        = 'Source/Foundation'
-    ss.framework  = "Foundation"
-  end
+  s.default_subspec = "Extensions"
 
   s.subspec 'Extensions' do |ss|
-    ss.source_files        = 'Source/Extensions'
+
+    ss.subspec 'Foundation' do |sss|
+      sss.source_files = 'Source/Extensions/Foundation'
+    end
+
+    ss.subspec 'UI' do |sss|
+      sss.source_files = 'Source/Extensions/UI'
+    end
+
   end
 
-  # s.resource_bundles = {
-  #   'Skein' => ['Skein/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end

@@ -16,16 +16,16 @@ PODS:
     - iOSSnapshotTestCase (~> 5.0)
     - Nimble (~> 7.0)
   - Quick (2.0.0)
-  - Skein (0.1.0):
-    - Skein/Foundation (= 0.1.0)
-  - Skein/Foundation (0.1.0)
+  - Skein/Extensions/Foundation (0.1.0)
+  - Skein/Extensions/UI (0.1.0)
 
 DEPENDENCIES:
   - FBSnapshotTestCase
   - Nimble
   - Nimble-Snapshots
   - Quick
-  - Skein (from `../`)
+  - Skein/Extensions/Foundation (from `../`)
+  - Skein/Extensions/UI (from `../`)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -45,8 +45,8 @@ SPEC CHECKSUMS:
   Nimble: 051e3d8912d40138fa5591c78594f95fb172af37
   Nimble-Snapshots: bbd1ab264bacc24a9ce24a8363bc05aac783aeb0
   Quick: ce1276c7c27ba2da3cb2fd0cde053c3648b3b22d
-  Skein: 5ab8af49d61091e1873a44f0f466d56fa450325c
+  Skein: 09bbf4b9ca2ea1cc5b04d99f9b02b4aa34f64e84
 
-PODFILE CHECKSUM: 5eef7b50dd811084854c86a7c9911a1eb651cd91
+PODFILE CHECKSUM: b2ac79c3c91daf32ca7642d7853217df258cbc17
 
 COCOAPODS: 1.6.1

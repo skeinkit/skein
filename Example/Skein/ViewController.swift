@@ -19,11 +19,16 @@ class ViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
 
-        let tes = ReplaceMe()
 
-        let mc = MyClassTest()
-        let str = ""
-        print(str.decimalDigits)
+        ViewController.storyboardIdentifier
+
+        "let str".decimalDigits
+
+//        let tes = ReplaceMe()
+//
+//        let mc = MyClassTest()
+//        let str = ""
+//        print(str.decimalDigits)
         // Dispose of any resources that can be recreated.
     }
 

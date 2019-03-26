@@ -1,7 +1,9 @@
 use_frameworks!
 
 target 'Skein_Example' do
-  pod 'Skein', :path => '../'
+#  pod 'Skein', :path => '../'
+  pod 'Skein/Extensions/Foundation', :path => '../'
+  pod 'Skein/Extensions/UI', :path => '../'
 
   target 'Skein_Tests' do
     inherit! :search_paths
