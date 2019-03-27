@@ -112,6 +112,10 @@ public extension UITableView {
         return dequeueReusableCell(withType: type, for: indexPath)!
     }
 
+    func dequeueDefaultReusableCell(withIdentifier identifier: String = "defaultReusableCell") -> UITableViewCell {
+        return dequeueReusableCell(withIdentifier: identifier) ?? UITableViewCell(style: .default, reuseIdentifier: identifier)
+    }
+
     var lastSection: Int {
         return numberOfSections - 1
     }
