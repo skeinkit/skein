@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'Skein'
-  s.version          = '0.3.0'
+  s.version          = '0.4.0'
   s.summary          = '🚀👩‍💻'
 
   s.description      = 'Skein is a set of Swift extensions, utilities and components that aimed to speed up application development.'
@@ -25,6 +25,10 @@ Pod::Spec.new do |s|
 
     ss.subspec 'UI' do |sss|
       sss.source_files = 'Source/Extensions/UI'
+    end
+
+    ss.subspec 'Crypto' do |sss|
+      sss.source_files = 'Source/Extensions/Crypto'
     end
 
   end
