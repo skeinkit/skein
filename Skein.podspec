@@ -31,6 +31,13 @@ Pod::Spec.new do |s|
       sss.source_files = 'Source/Extensions/Crypto'
     end
 
+    ss.subspec 'ReactiveSwift' do |sss|
+      sss.source_files = 'Source/Extensions/ReactiveSwift'
+
+      sss.dependency 'Result'
+      sss.dependency 'ReactiveSwift'
+    end
+
   end
 
 end
