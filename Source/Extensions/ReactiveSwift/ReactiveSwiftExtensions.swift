@@ -11,7 +11,7 @@ import Result
 
 // MARK: - Signal Extensions
 
-extension Signal {
+public extension Signal {
     
     /// Repeats the latest value from `self` whenever `repeater` sends a `value`
     /// event.
